@@ -45,9 +45,11 @@ Any text follows !SLIDE will be added to the slide as css classes
 ###Syntax Highlighting
 
 For python
-~~~~{python}
-def test():
-    print 'hello'
+~~~~
+ ~~~~{python}
+ def test():
+     print 'hello'
+ ~~~~
 ~~~~
 
 ###Markdown syntax
