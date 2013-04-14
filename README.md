@@ -3,6 +3,9 @@ pydown is another "Presentation System in a single HTML page" written by python 
 
 Like keydown it uses the [deck.js](http://imakewebthings.github.com/deck.js) and its extentions for the presentation.
 
+##Demo
+[http://isnowfy.github.io/pydown/](http://isnowfy.github.io/pydown/)
+
 ##Usage
 
 ###Write your slides in markdown
