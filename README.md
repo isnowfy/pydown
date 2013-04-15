@@ -27,7 +27,7 @@ Edit slides.md
 ###Generate the html
 
 ~~~~
-python slides.md slides
+python main.py slides.md slides
 ~~~~
 
 This will make:
