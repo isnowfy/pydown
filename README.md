@@ -1,5 +1,5 @@
 #pydown
-pydown is another "Presentation System in a single HTML page" written by python ispired by [keydown](https://github.com/infews/keydown).
+pydown is another "Presentation System in a single HTML page" written by python inspired by [keydown](https://github.com/infews/keydown).
 
 Like keydown it uses the [deck.js](http://imakewebthings.github.com/deck.js) and its extentions for the presentation.
 
