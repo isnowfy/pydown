@@ -9,7 +9,7 @@
 ##You just need to write markdown file
 
 !SLIDE
-##Support code highlihting
+##Support code highlighting
 
 ~~~~{python}
 def hello():
