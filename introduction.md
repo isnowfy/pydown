@@ -26,7 +26,7 @@ def hello():
 ##Easy to use
 
 1. write your slides markdown file
-2. python main.py md diretory
+2. python main.py md directory
 
 !SLIDE
 
@@ -38,7 +38,7 @@ def hello():
  ##Easy to use
  
  1. write your slides markdown file
- 2. python main.py md diretory
+ 2. python main.py md directory
 ~~~~
 
 
