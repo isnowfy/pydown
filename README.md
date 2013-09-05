@@ -27,8 +27,19 @@ Edit slides.md
 ###Generate the html
 
 ~~~~
-python main.py slides.md slides
+$ python main.py slides.md slides
 ~~~~
+
+or you can install pydown to run it with `pydown`
+
+Thanks for [sloria](https://github.com/sloria)
+
+<pre>
+~~~~
+$ pip install python-pydown
+$ pydown slides.md slides
+~~~~
+</pre>
 
 This will make:
 ~~~~

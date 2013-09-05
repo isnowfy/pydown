@@ -42,7 +42,7 @@ def read(fname):
     return content
 
 setup(
-    name='pydown',
+    name='python-pydown',
     version="0.1.0",
     description='An HTML5 presentation builder written by python',
     long_description=read("README.md"),

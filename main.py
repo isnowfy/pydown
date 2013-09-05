@@ -58,7 +58,10 @@ def main():
     '''Main entry point for the pydown CLI.'''
     parser = optparse.OptionParser()
     (options, args) = parser.parse_args()
-    handle(*args)
+    if len(args) != 2:
+        print 'usage: pydown mdfile directory'
+    else:
+        handle(*args)
 
 if __name__ == '__main__':
     main()
