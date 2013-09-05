@@ -1,5 +1,5 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
 import os
 import codecs
 import shutil
@@ -7,13 +7,17 @@ import optparse
 
 from markdown import markdown
 
+
+HERE = os.path.abspath(os.path.dirname(__file__))
 markdown_options = ['extra', 'codehilite']
 
 
 def copy(dst):
     try:
-        shutil.copytree('templates/css', '%s/css' % dst)
-        shutil.copytree('templates/js', '%s/js' % dst)
+        shutil.copytree(os.path.join(HERE, 'templates', 'css'),
+                        os.path.join(dst, "css"))
+        shutil.copytree(os.path.join(HERE, 'templates', 'js'),
+                        os.path.join(dst, 'js'))
     except:
         pass
 
@@ -43,14 +47,18 @@ def handle(md, dst):
                 + markdown(item, markdown_options)\
                 + '</div>'\
                 + '</section>\n'
-    html = codecs.open('templates/index.html', 'r', 'utf-8')
+    index_template = os.path.join(HERE, 'templates', 'index.html')
+    html = codecs.open(index_template, 'r', 'utf-8')
     html = html.read().replace('<slide>', data)
-    f = codecs.open('%s/index.html' % dst, 'w', 'utf-8')
+    f = codecs.open(os.path.join(dst, 'index.html'), 'w', 'utf-8')
     f.write(html)
     f.close()
 
-
-if __name__ == '__main__':
+def main():
+    '''Main entry point for the pydown CLI.'''
     parser = optparse.OptionParser()
     (options, args) = parser.parse_args()
     handle(*args)
+
+if __name__ == '__main__':
+    main()
