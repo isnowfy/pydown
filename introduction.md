@@ -41,6 +41,19 @@ def hello():
  2. python main.py md directory
 ~~~~
 
+!SLIDE
+
+##Supports Markdown extensions
+
+Like Markdown Extra
+{: .slide}
+
+Via the [python-markdown](https://pythonhosted.org/Markdown/extensions/index.html) module
+{: .slide}
+
+which allows for things adding additional attributes to markdown
+{: .slide}
+
 
 !SLIDE
 
