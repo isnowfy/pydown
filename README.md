@@ -1,14 +1,14 @@
-#pydown
+# pydown
 pydown is another "Presentation System in a single HTML page" written by python inspired by [keydown](https://github.com/infews/keydown).
 
 Like keydown it uses the [deck.js](http://imakewebthings.github.com/deck.js) and its extentions for the presentation.
 
-##Demo
+## Demo
 [http://isnowfy.github.io/pydown/](http://isnowfy.github.io/pydown/)
 
-##Usage
+## Usage
 
-###Write your slides in markdown
+### Write your slides in markdown
 Edit slides.md
 ~~~~
 !SLIDE
@@ -24,7 +24,7 @@ Edit slides.md
 # left
 ~~~~
 
-###Generate the html
+### Generate the html
 
 ~~~~
 $ python main.py slides.md slides
@@ -47,14 +47,14 @@ This will make:
   | - index.html
 ~~~~
 
-###Slide classes
+### Slide classes
 
 Any text follows !SLIDE will be added to the slide as css classes
 ~~~~
 !SLIDE left
 ~~~~
 
-###Syntax Highlighting
+### Syntax Highlighting
 
 For python
 <pre>
@@ -64,7 +64,7 @@ For python
 ~~~~
 </pre>
 
-###Markdown syntax
+### Markdown syntax
 
 [English version](http://daringfireball.net/projects/markdown/syntax)
 
